@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --cyan: rgb(25, 162, 174);
+  --dark-blue: hsl(229, 23%, 23%);
+  --greyish-blue: hsl(227, 10%, 46%);
+  --neutral-grey: hsl(0, 0%, 59%);
+  --font-family: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cyan);
+}
+
+#img-top {
+  position: absolute;
+  top: -400px;
+  left: -200px;
+}
+
+#img-bot {
+  position: absolute;
+  bottom: -400px;
+  right: -200px;
+}
+
+.card {
+  z-index: 2;
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 470px;
+  height: 520px;
+}
+
+.top {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.top-img {
+  margin-top: 12.5rem;
+  left: 200px;
+  top: 100px;
+}
+
+.top-img img {
+  height: 160px;
+  border-radius: 50%;
+  border: 0.4rem solid #fff;
+}
+
+.mid {
+  height: 12.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  /* border-bottom: 1px solid var(--neutral-grey); */
+}
+
+.name-age {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+#name {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+}
+
+#age {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  color: var(--neutral-grey);
+  font-weight: 400;
+}
+
+.country {
+  text-align: center;
+  width: 50%;
+  margin-top: 1rem;
+}
+.country h2 {
+  font-family: var(--font-family);
+  color: var(--neutral-grey);
+  font-weight: 400;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+}
+
+.bot {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 2rem;
+}
+
+.bot1,
+.bot2,
+.bot3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.9rem;
+  font-family: var(--font-family);
+}
+
+.bot1 h3,
+.bot2 h3,
+.bot3 h3 {
+  color: var(--neutral-grey);
+  font-size: 1rem;
+}
+
+hr {
+  border-top: var(--neutral-grey);
+}
+
+@media only screen and (max-width: 768px) {
+  #img-top {
+    left: -700px;
+    top: -400px;
+  }
+  #img-bot {
+    right: -700px;
+    bottom: -400px;
+  }
+}
