@@ -4,6 +4,7 @@
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
 - [My process](#my-process)
   - [Built with](#built-with)
 
@@ -16,6 +17,8 @@ I can feel the improvement , got to continue pushing myself to improve , so stay
 ### The challenge
 
 - Build out the project to the designs provided
+
+### Screenshot
 
 ### Built with
 
